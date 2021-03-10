@@ -21,22 +21,22 @@ SET default_tablespace = '';
 SET default_with_oids = false;
 
 --
--- Name: Department_Manager; Type: TABLE; Schema: public; Owner: postgres
+-- Name: department_manager; Type: TABLE; Schema: public; Owner: postgres
 --
 
-CREATE TABLE public."Department_Manager" (
+CREATE TABLE public.department_manager (
     dept_no character varying,
-    "emp_no " bigint NOT NULL
+    emp_no bigint NOT NULL
 );
 
 
-ALTER TABLE public."Department_Manager" OWNER TO postgres;
+ALTER TABLE public.department_manager OWNER TO postgres;
 
 --
--- Data for Name: Department_Manager; Type: TABLE DATA; Schema: public; Owner: postgres
+-- Data for Name: department_manager; Type: TABLE DATA; Schema: public; Owner: postgres
 --
 
-COPY public."Department_Manager" (dept_no, "emp_no ") FROM stdin;
+COPY public.department_manager (dept_no, emp_no) FROM stdin;
 d001	110022
 d001	110039
 d002	110085
@@ -65,19 +65,19 @@ d009	111939
 
 
 --
--- Name: Department_Manager Department_Manager_pkey; Type: CONSTRAINT; Schema: public; Owner: postgres
+-- Name: department_manager department_manager_pkey; Type: CONSTRAINT; Schema: public; Owner: postgres
 --
 
-ALTER TABLE ONLY public."Department_Manager"
-    ADD CONSTRAINT "Department_Manager_pkey" PRIMARY KEY ("emp_no ");
+ALTER TABLE ONLY public.department_manager
+    ADD CONSTRAINT department_manager_pkey PRIMARY KEY (emp_no);
 
 
 --
--- Name: Department_Manager dept_no; Type: FK CONSTRAINT; Schema: public; Owner: postgres
+-- Name: department_manager department_manager_dept_no_fkey; Type: FK CONSTRAINT; Schema: public; Owner: postgres
 --
 
-ALTER TABLE ONLY public."Department_Manager"
-    ADD CONSTRAINT dept_no FOREIGN KEY (dept_no) REFERENCES public."Departments"(dept_no);
+ALTER TABLE ONLY public.department_manager
+    ADD CONSTRAINT department_manager_dept_no_fkey FOREIGN KEY (dept_no) REFERENCES public."departments "(dept_no) NOT VALID;
 
 
 --
