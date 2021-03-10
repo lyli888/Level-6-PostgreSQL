@@ -32,7 +32,8 @@ SELECT * FROM public."Table_Name";
 
 Restricted to this form of syntax, I could not select multiple columns from different tables in the same query, so I am now stuck.
 
-How do I fix this so that my table behave normally???
+How do I fix this so that my table behave normally??? I attempted to create a table leaving the "Schema" field (where "public" is autofilled)
+blank, but this returned an error message.
 
 4. List the department of each employee with the following information: employee number, last name, first name, and department name.
 
