@@ -1,4 +1,4 @@
-SQL Queries File
+SQL Queries File *PostGres 11*
 
 1. List the following details of each employee: employee number, last name, first name, sex, and salary. 
 
