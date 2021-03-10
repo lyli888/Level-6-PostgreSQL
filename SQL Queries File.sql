@@ -19,18 +19,18 @@ INNER JOIN
 public."Departments" AS d
 ON m.dept_no = d.dept_no
 
-***I GOT STUCK BECAUSE FOR SOME REASON MY DATABASE IN PGADMIN DID NOT RESPOND USE THE SAME SQL SYNTAX I SAW EVERYWHERE ELSE:
-NORMALLY, TO SELECT MULTIPLE COLUMNS I WOULD WRITE 
+***I got stuck because for some reason my PGAdmin did not response to the syntax I saw everywhere else. Normally, to select multiple columns
+from different tables I would write:
 
 SELECT dept_emp.emp_no,
        employees.last_name,
 	   employees.first_name,
 	   departments.dept_name
 
-HOWEVER, IN MY DATABASE I COULD ONLY SELECT A TABLE BY REFERRING TO IT AS public."Table_Name" USING
+However, my database required me to refer to tables as public."Table_Name" and select only by using:
 
 SELECT * FROM public."Table_Name";
 
-RESTRICTED TO THIS FORM OF SYNTAX, I COULD NOT SELECT MULTIPLE COLUMNS FROM DIFFERENT DATABASES IN THE SAME QUERY, SO I AM NOW STUCK.
+Restricted to this form of syntax, I could not select multiple columns from different tables in the same query, so I am now stuck.
 
-HOW DO I FIX THIS SO THAT MY TABLES BEHAVE NORMALL???
+How do I fix this so that my table behave normally???
