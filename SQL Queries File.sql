@@ -12,4 +12,11 @@ WHERE
 	hire_date >= '1986-01-01' AND 
 	hire_date < '1987-01-01';
 
-3. 
+3. List the manager of each department with the following information: department number, department name, the manager's employee number, last name, first name.
+
+
+SELECT * 
+FROM public."Department_Manager" AS m
+INNER JOIN 
+public."Departments" AS d
+ON m.dept_no = d.dept_no
