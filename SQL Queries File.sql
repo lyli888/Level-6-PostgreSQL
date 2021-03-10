@@ -35,5 +35,5 @@ WHERE first_name = 'Hercules' AND last_name LIKE 'B%';
 
 SELECT last_name, COUNT(last_name)AS Frequency
 FROM employees
- GROUP BY last_name
- ORDER BY COUNT(last_name) DESC;
+GROUP BY last_name
+ORDER BY COUNT(last_name) DESC;
