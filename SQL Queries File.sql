@@ -12,14 +12,13 @@ WHERE hire_date >= '1986-01-01' AND hire_date < '1987-01-01';
 
 3. List the manager of each department with the following information: department number, department name, the manager's employee number, last name, first name.
 
-
 SELECT * 
 FROM public."Department_Manager" AS m
 INNER JOIN 
 public."Departments" AS d
 ON m.dept_no = d.dept_no
 
-I got stuck because for some reason my PGAdmin did not response to the syntax I saw everywhere else. Normally, to select multiple columns
+I got stuck at this point because for some reason my PGAdmin did not response to the syntax I saw everywhere else. Normally, to select multiple columns
 from different tables I would write:
 
 SELECT dept_emp.emp_no,
@@ -53,3 +52,8 @@ WHERE first_name = 'Hercules' AND last_name LIKE 'B%';
 **SEE ABOVE**
 
 8. In descending order, list the frequency count of employee last names, i.e., how many employees share each last name.
+
+SELECT last_name, COUNT(last_name)AS Frequency
+FROM public."Employees"
+GROUP BY last_name
+ORDER BY COUNT(last_name) DESC;
