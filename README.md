@@ -4,7 +4,7 @@
 
 #### Data Modeling
 
-Inspect the CSVs and sketch out an ERD of the tables. Feel free to use a tool.
+Inspect the CSVs and sketch out an ERD of the tables. Feel free to use a diagramming tool.
 
 #### Data Engineering
 
