@@ -1,4 +1,4 @@
-#### Data Modeling In SQL - Postgres/PGAdmin
+#### Data Modeling - PostgreSQL (pgAdmin)
 
 Inspect the CSVs and sketch out an ERD of the tables. Feel free to use a diagramming tool.
 
