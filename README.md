@@ -1,8 +1,20 @@
-#### Data Modeling - PostgreSQL (pgAdmin)
+#PostgreSQL (pgAdmin)
+
+Your task is a research project on employees of a corporation from the 1980s and 1990s. All that remain of the database of employees from that period are six CSV files.
+
+In this assignment, you will design the tables to hold data in the CSVs, import the CSVs into a SQL database, and answer questions about the data. In other words, you will perform:
+
+1. Data Engineering
+
+3. Data Analysis
+
+Note: You may hear the term "Data Modeling" in place of "Data Engineering," but they are the same terms. Data Engineering is the more modern wording instead of Data Modeling.
+
+## Data Modeling - PostgreSQL (pgAdmin)
 
 Inspect the CSVs and sketch out an ERD of the tables. Feel free to use a diagramming tool.
 
-#### Data Engineering
+## Data Engineering
 
 * Use the information you have to create a table schema for each of the six CSV files. Remember to specify data types, primary keys, foreign keys, and other constraints.
 
@@ -11,7 +23,7 @@ Inspect the CSVs and sketch out an ERD of the tables. Feel free to use a diagram
 
 * Import each CSV file into the corresponding SQL table. **Note** be sure to import the data in the same order that the tables were created and account for the headers when importing to avoid errors.
 
-#### Data Analysis
+## Data Analysis
 
 Once you have a complete database, do the following:
 
@@ -31,7 +43,7 @@ Once you have a complete database, do the following:
 
 8. In descending order, list the frequency count of employee last names, i.e., how many employees share each last name.
 
-# Submission
+## Submission
 
 * Create an image file of your ERD.
 
